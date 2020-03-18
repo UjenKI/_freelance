@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    header{
+        // background: none;
+        background: rgb(59, 57, 57);
+        .brand-logo{
+            padding: 20px 0;
+            a{
+                h1{
+                    margin: 0;
+                    font-weight: 400;
+                    @include font(25px, $font-jonh-bold, $font--color-primary_1, 12px);
+                }
+            }
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            input{
+                display: none;
+            }
+            label{
+                margin: 0;
+                ul{
+                    margin: 0;
+                    padding: 14px 0;
+                    li{
+                        padding: 0 13px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 756px){
+    label{
+        span{
+            clear: both;
+            width: 30px;
+            height: 2px;
+            margin: 5px 0;
+            display: block;
+            background: $font--color-primary_1;
+            transition: 0.6s;
+            &:hover{
+                cursor: pointer;
+            } 
+        }
+        
+
+    }
+    input{
+        display: none;
+        &:checked ~ label{
+            span {
+                margin: 0;
+                top: 50%;
+               }
+            .first_span {
+                opacity: 1;
+                transform: rotate(405deg);
+                }
+            .second_span{
+                display: none;
+            }
+            .third_span {
+                opacity: 1;
+                transform: rotate(-405deg);
+                }    
+        }
+    }
+}
