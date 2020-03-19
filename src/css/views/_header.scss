@@ -1,0 +1,50 @@
+.main_banner{
+    background: url(../../img/IMAGE.jpg) no-repeat, center;
+    height: 730px;
+    .banner_item{
+        text-align: center;
+        width: 100%;
+        margin-top: 270px;
+        h2{
+            @include font(35px, $font-ssp-light, $font--color-primary_1, 70px);
+            letter-spacing: 7px;
+            font-weight: 300;
+        }
+        p{
+            margin-top: 42px;
+            @include font(16px, $font-open_sans-regular, $font--color-primary_1, 28px);
+        }
+       
+        .banner_btn{
+            margin-top: 220px;
+            width: 35px;
+            height: 36px;
+            padding: 8px 0;
+            border: none;
+            border-radius: 50%;
+            background: $bgc--color-primary_1;
+            color: $font--color-primary_1;
+            animation: fly;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            &:focus{
+                outline: none;
+            }
+            &:hover{
+                background: $bgc--hover-primary_1;
+                transition: 0.3s ease-in;
+            }
+        }
+        @keyframes fly {
+            0%{
+                margin-top: 130px;
+            }
+            50%{
+                margin-top: 140px;
+            }
+            100%{
+                margin-top: 130px;
+            }
+        }
+    }
+}
