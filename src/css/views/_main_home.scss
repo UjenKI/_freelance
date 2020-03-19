@@ -1,0 +1,35 @@
+.this_is_bouncy{
+   .is_bouncy_item{
+       padding: 110px 55px;
+       h3{
+           margin: 39px 0;
+           @include font(20px, $font-ssp-regular, $font--color-primary_2, 12px);
+           font-weight: 300;
+           letter-spacing: 4px;
+           text-transform: uppercase;
+       }
+       p{
+        @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+        font-weight: 400;
+        letter-spacing: 0.7px; 
+        margin: 20px 0;
+       }
+       .btn_primary-1{
+        background: $font--color-primary_1;
+        width: 140px;
+        height: 37px;
+        border-radius: 19px;
+        border: 1px solid $border--color-primary_1;
+        @include font(16px, $font-open_sans-regular, $font--color-primary_2, 12px);
+        &:hover{
+            transition: 0.3s ease-in;
+            background: $bgc--color-primary_3;
+            color: $font--color-primary_1;
+            border: none;
+        }
+       }
+   } 
+   .is_bouncy_img{
+       padding: 86px 57px;
+   }
+}

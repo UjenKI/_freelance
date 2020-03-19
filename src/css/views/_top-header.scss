@@ -63,7 +63,7 @@ body{
        padding: 0 5px;
    }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .brand-logo{
         width: 70%;
     }
@@ -104,6 +104,11 @@ body{
     input{
         display: none;
         &:checked ~ label{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            transition: 0.3s ease-in-out;
+            background: url(../../img/IMAGE.jpg) no-repeat, center;
             span {
                 // margin: 0;
                 // top: 50%;
