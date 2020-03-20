@@ -33,3 +33,30 @@
        padding: 86px 57px;
    }
 }
+.about{
+    background: $bgc--color-primary_4;
+    .about-block{
+        text-align: center;
+        h3{
+            margin: 39px 0;
+            @include font(20px, $font-ssp-regular, $font--color-primary_2, 12px);
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        p{
+         @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+         font-weight: 400;
+         letter-spacing: 0.7px; 
+         margin: 20px 0;
+        }
+        .about_btn_box{
+            display: flex;
+            button{
+                width: 53px;
+                height: 53px;
+                background: $bgc--color-primary_2;
+            }
+        }
+    }
+}
