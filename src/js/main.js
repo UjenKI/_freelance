@@ -1,17 +1,19 @@
-window.onscroll = function () {
-    if (window.pageYOffset > 5) {
-        document.getElementById('for-b').style.top = 0;
-        document.querySelector('.logo-fixed').style.display = "block";
-    } else {
-        document.getElementById('for-b').style.top = 50 + 'px';
-        document.querySelector('.logo-fixed').style.display = "none";
+function openTab(evt, tabNumber) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("tab");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
     }
-};
-window.onload = function () {
-    if (document.getElementById('burger').checked == true) {
-        document.getElementById('#span-one').style.rotate = 584 + "deg";
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" click_btn", "");
     }
+    document.getElementById(tabNumber).style.display = "block";
+    evt.currentTarget.className += " click_btn";
 }
+// 
+
+// 
 $('.sl').slick({
     autoplay: true,
     autoplaySpeed: 3000,
