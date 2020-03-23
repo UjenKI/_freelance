@@ -12,7 +12,36 @@ function openTab(evt, tabNumber) {
     evt.currentTarget.className += " click_btn";
 }
 // 
-
+$('.second.circle').circleProgress({
+    value: 0.75,
+    startAngle: 4.72,
+    size: 120,
+    reverse: true,
+    fill: { color: "#19bd9a" },
+    emptyFill: "rgba(50, 115, 119, 1)"
+}).on('circle-animation-progress', function (event, progress) {
+    $(this).find('strong').html(Math.round(75 * progress) + '<i>%</i>');
+});
+$('.first.circle').circleProgress({
+    value: 0.8,
+    startAngle: 4.72,
+    size: 120,
+    reverse: true,
+    fill: { color: "#19bd9a" },
+    emptyFill: "rgba(50, 115, 119, 1)"
+}).on('circle-animation-progress', function (event, progress) {
+    $(this).find('strong').html(Math.round(80 * progress) + '<i>%</i>');
+});
+$('.third.circle').circleProgress({
+    value: 0.6,
+    startAngle: 4.72,
+    size: 120,
+    reverse: true,
+    fill: { color: "#19bd9a" },
+    emptyFill: "rgba(50, 115, 119, 1)"
+}).on('circle-animation-progress', function (event, progress) {
+    $(this).find('strong').html(Math.round(60 * progress) + '<i>%</i>');
+});
 // 
 $('.sl').slick({
     autoplay: true,
@@ -24,3 +53,5 @@ $('.sl').slick({
     arrows: false,
     adaptiveHeight: true
 });
+// 4$$$$$$$$$$$$
+
