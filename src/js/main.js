@@ -1,3 +1,4 @@
+// ----------------------------------------
 function openTab(evt, tabNumber) {
     var i, x, tablinks;
     x = document.getElementsByClassName("tab");
