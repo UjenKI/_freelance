@@ -485,6 +485,9 @@
             #item-two{
                 grid-column: 2/2;
                 grid-row: 1/7;
+                .gallery_hover{
+                    padding: 20px 36px;
+                }
             }
             #item-three{
                 grid-column: 3/3;
@@ -504,7 +507,7 @@
             }
             #item-seven{
                 grid-column: 3/4;
-                grid-row: 17/9;
+                grid-row: 16/21;
             }
             #item-eight{
                 grid-column: 4/4;
@@ -513,6 +516,9 @@
             #item-nine{
                 grid-column: 3/4;
                 grid-row: 9/15;
+                .gallery_hover{
+                    padding: 23px 36px;
+                }
             }
             #item-ten{
                 grid-column: 4/4;
@@ -521,10 +527,19 @@
             #item-eleven{
                 grid-column: 2/2;
                 grid-row: 16/21;
+                .gallery_hover{
+                    padding: 1px 31px;
+                    p{
+                        margin: 18px 0;
+                    }
+                }
             }
             #item-twelve{
                 grid-column: 3/3;
                 grid-row: 21/15;
+                .gallery_hover{
+                    padding: 20px 36px;
+                }
             }
         }
     }
