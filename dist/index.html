@@ -274,21 +274,22 @@
             <!--  -->
             <div class="row">
                 <div class="col-12 gallery_filter">
-                    <ul>
-                        <li><a>All works</a></li>
-                        <li><a>Print</a></li>
-                        <li><a>Identity</a></li>
-                        <li><a>Branding</a></li>
-                        <li><a>Web</a></li>
-                        <li><a>HTML</a></li>
-                        <li><a>Wordpress</a></li>
+                    <ul id="buttons">
+                        <!-- https://www.youtube.com/watch?v=icZRbxwHQ4s -->
+                        <li data-target="all">All works</li>
+                        <li data-target="print">Print</li>
+                        <li data-target="identity">Identity</li>
+                        <li data-target="branding">Branding</li>
+                        <li data-target="web">Web</li>
+                        <li data-target="html">HTML</li>
+                        <li data-target="wordpress">Wordpress</li>
                     </ul>
                 </div>
             </div>
             <!-- ------gallery start------ -->
             <div class="gallery_container">
                 <div class="gallery_item">
-                    <div class="gallery_item_box" id="item-one">
+                    <div class="gallery_item_box" data-id="branding" id="item-one">
                         <img src="../img/gallery-1.jpg" alt="">
                         <div class="gallery_hover">
                             <h3>TITLE HERE</h3>
@@ -297,7 +298,7 @@
                             <button><i class="far fa-heart"></i></button>
                         </div>
                     </div>
-                    <div class="gallery_item_box" id="item-two">
+                    <div class="gallery_item_box" data-id="identity" id="item-two">
                         <img src="../img/gallery-2.jpg" alt="">
                         <div class="gallery_hover">
                             <h3>TITLE HERE</h3>
@@ -306,7 +307,7 @@
                             <button><i class="far fa-heart"></i></button>
                         </div>
                     </div>
-                    <div class="gallery_item_box" id="item-three">
+                    <div class="gallery_item_box" data-id="identity" id="item-three">
                         <img src="../img/gallery-3.png" alt="">
                         <div class="gallery_hover">
                             <h3>TITLE HERE</h3>
@@ -315,7 +316,7 @@
                             <button><i class="far fa-heart"></i></button>
                         </div>
                     </div>
-                    <div class="gallery_item_box" id="item-four">
+                    <div class="gallery_item_box" data-id="branding" id="item-four">
                         <img src="../img/gallery-4.png" alt="">
                         <div class="gallery_hover">
                             <h3>TITLE HERE</h3>
@@ -324,7 +325,7 @@
                             <button><i class="far fa-heart"></i></button>
                         </div>
                     </div>
-                    <div class="gallery_item_box" id="item-five">
+                    <div class="gallery_item_box" data-id="identity" id="item-five">
                         <img src="../img/gallery-5.png" alt="">
                         <div class="gallery_hover">
                             <h3>TITLE HERE</h3>
@@ -333,7 +334,7 @@
                             <button><i class="far fa-heart"></i></button>
                         </div>
                     </div>
-                    <div class="gallery_item_box" id="item-six">
+                    <div class="gallery_item_box" data-id="branding" id="item-six">
                         <img src="../img/gallery-6.png" alt="">
                         <div class="gallery_hover">
                             <h3>TITLE HERE</h3>
@@ -342,7 +343,7 @@
                             <button><i class="far fa-heart"></i></button>
                         </div>
                     </div>
-                    <div class="gallery_item_box" id="item-seven">
+                    <div class="gallery_item_box" data-id="web" id="item-seven">
                         <img src="../img/gallery-7.png" alt="">
                         <div class="gallery_hover">
                             <h3>TITLE HERE</h3>
@@ -351,7 +352,7 @@
                             <button><i class="far fa-heart"></i></button>
                         </div>
                     </div>
-                    <div class="gallery_item_box" id="item-eight">
+                    <div class="gallery_item_box" data-id="wordpress" id="item-eight">
                         <img src="../img/gallery-8.png" alt="">
                         <div class="gallery_hover">
                             <h3>TITLE HERE</h3>
@@ -360,7 +361,7 @@
                             <button><i class="far fa-heart"></i></button>
                         </div>
                     </div>
-                    <div class="gallery_item_box" id="item-nine">
+                    <div class="gallery_item_box" data-id="html" id="item-nine">
                         <img src="../img/gallery-9.png" alt="">
                         <div class="gallery_hover">
                             <h3>TITLE HERE</h3>
@@ -369,7 +370,7 @@
                             <button><i class="far fa-heart"></i></button>
                         </div>
                     </div>
-                    <div class="gallery_item_box" id="item-ten">
+                    <div class="gallery_item_box" data-id="web" id="item-ten">
                         <img src="../img/gallery-10.png" alt="">
                         <div class="gallery_hover">
                             <h3>TITLE HERE</h3>
@@ -378,7 +379,7 @@
                             <button><i class="far fa-heart"></i></button>
                         </div>
                     </div>
-                    <div class="gallery_item_box" id="item-eleven">
+                    <div class="gallery_item_box" data-id="print" id="item-eleven">
                         <img src="../img/gallery-11.png" alt="">
                         <div class="gallery_hover">
                             <h3>TITLE HERE</h3>
@@ -387,7 +388,7 @@
                             <button><i class="far fa-heart"></i></button>
                         </div>
                     </div>
-                    <div class="gallery_item_box" id="item-twelve">
+                    <div class="gallery_item_box" data-id="print" id="item-twelve">
                         <img src="../img/gallery-12.png" alt="">
                         <div class="gallery_hover">
                             <h3>TITLE HERE</h3>

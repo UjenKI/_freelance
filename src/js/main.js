@@ -1,3 +1,25 @@
+var buttons = document.querySelector("#buttons").children;
+var items = document.querySelector(".gallery_item").children;
+var father = document.querySelector(".gallery_item");
+// console.log(buttons);
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function () {
+        // console.log(this.getAttribute("data-target"));
+        for (var j = 0; j < buttons.length; j++) {
+            buttons[j].classList.remove("active");
+        }
+        this.classList.add("active");
+        var target = this.getAttribute("data-target");
+
+        for (var k = 0; k < items.length; k++) {
+            items[k].style.display = "none";
+            if (items[k].getAttribute("data-id") == target) {
+                items[k].style.display = "block";
+            }
+        }
+    })
+}
+
 // ----------------------------------------
 function openTab(evt, tabNumber) {
     var i, x, tablinks;

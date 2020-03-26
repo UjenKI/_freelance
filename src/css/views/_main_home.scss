@@ -397,6 +397,9 @@
                     }
                 }
             }
+            .active{
+                border-bottom: 1px solid $font--color-primary_4;
+            }
         }
     }
     .gallery_container{
@@ -432,7 +435,7 @@
                         &::after{
                             content: '';
                             display: block;
-                            border: 1px solid $font--color-primary_4;
+                            border-bottom: 1px solid $font--color-primary_4;
                             width: 85%;
                         }
                     }
