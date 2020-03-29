@@ -1,25 +1,42 @@
-var buttons = document.querySelector("#buttons").children;
-var items = document.querySelector(".gallery_item").children;
-var father = document.querySelector(".gallery_item");
-// console.log(buttons);
-for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", function () {
-        // console.log(this.getAttribute("data-target"));
-        for (var j = 0; j < buttons.length; j++) {
-            buttons[j].classList.remove("active");
-        }
-        this.classList.add("active");
-        var target = this.getAttribute("data-target");
+// var buttons = document.querySelector("#buttons").children;
+// var items = document.querySelector(".gallery_item").children;
+// var father = document.querySelector(".gallery_item");
+// // console.log(buttons);
+// for (var i = 0; i < buttons.length; i++) {
+//     buttons[i].addEventListener("click", function () {
+//         // console.log(this.getAttribute("data-target"));
+//         for (var j = 0; j < buttons.length; j++) {
+//             buttons[j].classList.remove("active");
+//         }
+//         this.classList.add("active");
+//         var target = this.getAttribute("data-target");
 
-        for (var k = 0; k < items.length; k++) {
-            items[k].style.display = "none";
-            if (items[k].getAttribute("data-id") == target) {
-                items[k].style.display = "block";
-            }
-        }
-    })
-}
-
+//         for (var k = 0; k < items.length; k++) {
+//             items[k].style.display = "none";
+//             if (items[k].getAttribute("data-id") == target && target !== "all") {
+//                 items[k].style.display = "block";
+//             }
+//         }
+//     })
+// }
+// 
+// $(document).ready(function () {
+//     var container = $('.gallery_item');
+//     container.imagesLoaded(function () {
+//         container.masonry({
+//             itemSelector: '.gallery_item_box',
+//             columnWidth: 100,
+//             percentPosition: true
+//         });
+//     });
+// });
+// var elem = document.querySelector('.gallery_item');
+// var msnry = new Masonry(elem, {
+//     // options
+//     itemSelector: '.gallery_item_box',
+//     columnWidth: 100,
+//     percentPosition: true
+// });
 // ----------------------------------------
 function openTab(evt, tabNumber) {
     var i, x, tablinks;
@@ -67,7 +84,7 @@ $('.third.circle').circleProgress({
 });
 // 
 $('.sl').slick({
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     speed: 1000,
     cssEase: 'ease-in',

@@ -351,6 +351,7 @@
     }
 }
 .gallery{
+    background: $bgc--color-primary_4;
     .gallery_title{
         text-align: center;
         h3{
@@ -546,5 +547,112 @@
             }
         }
     }
+    .section-line{
+        width: 100%;
+        background: url(../../img/2-layers.jpg) center;
+        background-size: cover;
+        padding: 20px 0;
+        text-align: center;
+        margin: 30px 14px 49px;
+        p{
+            @include font(16px, $font-open_sans-regular, $font--color-primary_1, 25px);
+            font-weight: 400;
+            letter-spacing: 0.8;
+            margin: 10px 0;
+        }
+        .section-line-btn{
+            background: none;
+            width: 140px;
+            height: 37px;
+            border-radius: 19px;
+            border: 1px solid $border--color-primary_2;
+            @include font(16px, $font-open_sans-regular, $font--color-primary_1, 12px);
+            &:hover{
+                transition: 0.3s ease-in;
+                background: $bgc--color-primary_3;
+                color: $font--color-primary_1;
+                border: none;
+            }
+        }
+    }
 
+}
+.team{
+    .team_title{
+        text-align: center;
+        h3{
+            margin: 39px 0;
+            @include font(20px, $font-ssp-regular, $font--color-primary_2, 12px);
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        p{
+         @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+         font-weight: 400;
+         letter-spacing: 0.7px; 
+         margin: 30px 0;
+        }
+    }
+    .sl{
+        .sl__slide{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            .sl__img_box{
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                .sl__img_hover{
+                    opacity: 0;
+                    transition: 0.3s ease-in;
+                    position: absolute;
+                    width: 93%;
+                    background: $bgc--color-primary_7;
+                    top: 0;
+                    height: 95%;
+                    display: block;
+                    margin: 9px;
+                    padding: 102px 26%;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    button{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background: none;
+                        border: none;
+                        margin: 50% 0;
+                        outline: none;
+                        color: $font--color-primary_7;
+                        transition: 0.3s ease-in;
+                        &:hover{
+                            color: $font--color-primary_4;
+                        }
+                    }
+                }
+            }
+            .sl__text{
+                text-align: right;
+                h4{
+                    @include font(20px, $font-open_sans-regular, $font--color-primary_6, 12px);
+                    font-weight: 400;
+                }
+                span{
+                    @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    letter-spacing: 1.4px;
+                }
+                p{
+                    @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+                    font-weight: 400;
+                    letter-spacing: 0.7px; 
+                    margin: 30px 0;
+                   }
+            }
+        }
+    }
 }
