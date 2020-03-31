@@ -19,7 +19,14 @@
 //         }
 //     })
 // }
-// 
+
+
+// function setPercent(data) {
+//     var line = document.querySelector("#percent");
+//     console.log(line);
+//     line.style.width = data + "px";
+// }
+
 // $(document).ready(function () {
 //     var container = $('.gallery_item');
 //     container.imagesLoaded(function () {
@@ -59,7 +66,7 @@ $('.second.circle').circleProgress({
     reverse: true,
     fill: { color: "#19bd9a" },
     emptyFill: "rgba(50, 115, 119, 1)"
-}).on('circle-animation-progress', function (event, progress) {
+}).on('circle-animation-progress', function (_event, progress) {
     $(this).find('strong').html(Math.round(75 * progress) + '<i>%</i>');
 });
 $('.first.circle').circleProgress({
@@ -69,7 +76,7 @@ $('.first.circle').circleProgress({
     reverse: true,
     fill: { color: "#19bd9a" },
     emptyFill: "rgba(50, 115, 119, 1)"
-}).on('circle-animation-progress', function (event, progress) {
+}).on('circle-animation-progress', function (_event, progress) {
     $(this).find('strong').html(Math.round(80 * progress) + '<i>%</i>');
 });
 $('.third.circle').circleProgress({
@@ -79,19 +86,38 @@ $('.third.circle').circleProgress({
     reverse: true,
     fill: { color: "#19bd9a" },
     emptyFill: "rgba(50, 115, 119, 1)"
-}).on('circle-animation-progress', function (event, progress) {
+}).on('circle-animation-progress', function (_event, progress) {
     $(this).find('strong').html(Math.round(60 * progress) + '<i>%</i>');
 });
 // 
 $('.sl').slick({
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     speed: 1000,
     cssEase: 'ease-in',
     centerPadding: '25px',
     dots: true,
     arrows: false,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    infinite: false,
+    pauseOnHover: true
+});
+$('.slider').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    cssEase: 'ease-in',
+    centerPadding: '25px',
+    dots: true,
+    arrows: false,
+    adaptiveHeight: true,
+    infinite: false,
+    pauseOnHover: true,
+    vertical: true
 });
 // 4$$$$$$$$$$$$
+
+// percent.getAttribute('data-target');
+
+
 

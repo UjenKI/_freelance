@@ -636,15 +636,20 @@
             }
             .sl__text{
                 text-align: right;
-                h4{
-                    @include font(20px, $font-open_sans-regular, $font--color-primary_6, 12px);
-                    font-weight: 400;
-                }
-                span{
-                    @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
-                    font-weight: 300;
-                    text-transform: uppercase;
-                    letter-spacing: 1.4px;
+                .forborder{
+                    display: block;
+                    border-right: 2px solid $bgc--color-primary_1;
+                    padding: 2px 18px;
+                    h4{
+                        @include font(20px, $font-open_sans-regular, $font--color-primary_4, 12px);
+                        font-weight: 400;
+                    }
+                    span{
+                        @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+                        font-weight: 300;
+                        text-transform: uppercase;
+                        letter-spacing: 1.4px;
+                    }
                 }
                 p{
                     @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
@@ -652,6 +657,216 @@
                     letter-spacing: 0.7px; 
                     margin: 30px 0;
                    }
+                   span{
+                    @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    letter-spacing: 1.4px;
+                }   
+            }
+            .progress_block{
+                .fst_line{
+                    margin: 20px 0;
+                    .line_txt{
+                        display: flex;
+                        justify-content: space-between;
+                        text-transform: uppercase;
+                    }
+                    .line{
+                        margin: 5px 0;
+                        width: 100%;
+                        height: 3px;
+                        background: $bgc--color-primary_8;
+                        position:relative;
+                        span{
+                            display: block;
+                            position: absolute;
+                            width: 65%;
+                            height: 100%;
+                            transition: 0.3s ease-in;
+                            background: $bgc--color-primary_1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 45px;
+        li{
+            margin: 7px;
+            list-style-type: none;
+            width: 10px;
+            height: 10px;
+            border: 1px solid $bgc--color-primary_1;
+            // background: $bgc--color-primary_1;
+            background: none;
+            border-radius: 50%;
+            cursor: pointer;
+            button{
+                display: none;
+            }
+        }
+        .slick-active{
+            background: $bgc--color-primary_1;
+            transition: 0.3s ease-in;
+        }
+    }
+}
+.already_love{
+    background: url(../../img/love-bgk.jpg) center;
+    background-size: cover;
+    .section-line{
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        margin: 30px 14px 49px;
+        p{
+            @include font(16px, $font-open_sans-regular, $font--color-primary_1, 25px);
+            font-weight: 400;
+            letter-spacing: 0.8;
+            margin: 10px 0;
+        }
+        .section-line-btn{
+            background: none;
+            width: 140px;
+            height: 37px;
+            border-radius: 19px;
+            border: 1px solid $border--color-primary_2;
+            @include font(16px, $font-open_sans-regular, $font--color-primary_1, 12px);
+            &:hover{
+                transition: 0.3s ease-in;
+                background: $bgc--color-primary_3;
+                color: $font--color-primary_1;
+                border: none;
+            }
+        }
+    }
+}
+.testimonials{
+    background: $bgc--color-primary_4;
+    padding: 10px;
+    .testimonials_title{
+        text-align: center;
+        h3{
+            margin: 79px 0 30px;
+            @include font(20px, $font-ssp-regular, $font--color-primary_2, 12px);
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        p{
+         @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+         font-weight: 400;
+         letter-spacing: 0.7px; 
+         margin: 30px 0;
+        }
+    }
+    .sl{
+        background: $bgc--color-primary_9;
+        margin-bottom: 50px;
+        padding: 10px;
+        .portrait-box{
+            width: 100%;
+            img{
+                margin: 30px auto;
+            }
+        }
+        .testimonials_item{
+            padding-right: 70px;
+            p{
+                @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+                font-weight: 400;
+                letter-spacing: 0.7px; 
+                margin: 30px 0;
+            }
+            h4{
+                @include font(16px, $font-open_sans-regular, $font--color-primary_4, 20px);
+                text-transform: uppercase;
+                letter-spacing: 0.64;
+                font-weight: 700;
+            }
+            span{
+                @include font(14px, $font-open_sans-regular, $font--color-primary_6, 20px);
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        li{
+            margin: 7px;
+            list-style-type: none;
+            width: 10px;
+            height: 10px;
+            border: 1px solid $bgc--color-primary_1;
+            // background: $bgc--color-primary_1;
+            background: none;
+            border-radius: 50%;
+            cursor: pointer;
+            button{
+                display: none;
+            }
+        }
+        .slick-active{
+            background: $bgc--color-primary_1;
+            transition: 0.3s ease-in;
+        }
+    }
+}
+.news{
+    background: url(../../img/4-layers.jpg) center;
+    background-size: cover;
+    .news_title{
+        h3{
+            margin: 79px 0 30px;
+            @include font(20px, $font-ssp-regular, $font--color-primary_1, 12px);
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        p{
+         @include font(14px, $font-open_sans-regular, $font--color-primary_9, 25px);
+         font-weight: 400;
+         letter-spacing: 0.7px; 
+         margin: 30px 0;
+        }
+    }
+    .slider{
+        .sl_slide{
+            .slide_title{
+                h4{
+                    @include font(20px, $font-open_sans-regular, $font--color-primary_10, 12px);
+                    font-weight: 400;
+                    letter-spacing: 0.8px;
+                }
+                em{
+                    @include font(14px, $font-ssp-regular, $font--color-primary_3, 25px);
+                    font-weight: 300;
+                    letter-spacing: 1.4px; 
+                    margin: 30px 0;
+                    span{
+                        color: $font--color-primary_4;
+                    }
+                }
+                span{
+                    @include font(14px, $font-ssp-regular, $font--color-primary_6, 25px);
+                    font-weight: 300;
+                    letter-spacing: 1.4px; 
+                    margin: 30px 0;
+                }
+
+            }
+            p{
+                @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+                font-weight: 400;
+                letter-spacing: 0.7px; 
+                margin: 30px 0;
             }
         }
     }
