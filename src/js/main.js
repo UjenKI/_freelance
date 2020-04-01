@@ -103,7 +103,7 @@ $('.sl').slick({
     pauseOnHover: true
 });
 $('.slider').slick({
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     speed: 1000,
     cssEase: 'ease-in',

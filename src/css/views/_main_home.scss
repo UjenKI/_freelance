@@ -838,8 +838,12 @@
         }
     }
     .slider{
+        display: flex;
+        align-items: center;
         .sl_slide{
+            padding: 60px 79px;
             .slide_title{
+                width: 60%;
                 h4{
                     @include font(20px, $font-open_sans-regular, $font--color-primary_10, 12px);
                     font-weight: 400;
@@ -860,14 +864,76 @@
                     letter-spacing: 1.4px; 
                     margin: 30px 0;
                 }
+                p{
+                    @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+                    font-weight: 400;
+                    letter-spacing: 0.7px; 
+                    margin: 30px 0;
+                }
 
             }
-            p{
-                @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
-                font-weight: 400;
-                letter-spacing: 0.7px; 
-                margin: 30px 0;
+            .more{
+                border: none;
+                transition: 0.3s ease-in;
+                outline: none;
+                background: none;
+                padding: 16px;
+                border-radius: 20px;
+                @include font(16px, $font-open_sans-regular, $font--color-primary_3, 12px);
+                span{
+                    font-size: 20px;
+                }
+                &:hover{
+                    border: 1px solid $bgc--color-primary_2;
+                    span{
+                        transition: 0.3s ease-in;
+                        display: inline-block;
+                        transform: rotate(45deg);
+                    }
+                }
             }
+            
+        }
+        .slick-dots{
+            margin: 20px 0;
+            li{
+                margin: 7px;
+                list-style-type: none;
+                width: 10px;
+                height: 10px;
+                border: 1px solid $bgc--color-primary_4;
+                // background: $bgc--color-primary_1;
+                background: none;
+                border-radius: 50%;
+                cursor: pointer;
+                button{
+                    display: none;
+                }
+            }
+            .slick-active{
+                background: $bgc--color-primary_4;
+                transition: 0.3s ease-in;
+            }
+        }
+
+    }
+}
+.price{
+    background: $bgc--color-primary_4;
+    .price_title{
+        text-align: center;
+        h3{
+            margin: 79px 0 30px;
+            @include font(20px, $font-ssp-regular, $font--color-primary_11, 12px);
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        p{
+         @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+         font-weight: 400;
+         letter-spacing: 0.7px; 
+         margin: 30px 0;
         }
     }
 }
