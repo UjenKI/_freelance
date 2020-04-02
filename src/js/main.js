@@ -118,6 +118,12 @@ $('.slider').slick({
 // 4$$$$$$$$$$$$
 
 // percent.getAttribute('data-target');
+document.querySelector('#find').onclick = function () {
+    var hover = document.querySelector('.map_hover');
+    var map = document.querySelector('#mappin');
+    hover.style.opacity = 0;
+    map.style.zIndex = 99;
+}
 
 
 

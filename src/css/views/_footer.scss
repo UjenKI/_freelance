@@ -1,0 +1,40 @@
+.footer{
+    background: $bgc--color-primary_4;
+    text-align: center;
+    .footer_item{
+        a{
+            text-decoration: none;
+            color: $font--color-primary_1;
+            h1{
+                margin: 0;
+                font-weight: 800;
+                @include font(25px, $font-jonh-bold, $font--color-primary_7, 12px);
+            }
+        }
+        p{
+            @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+            font-weight: 400;
+            letter-spacing: 0.7;
+        }
+        .footer_social-buttons{
+            ul{
+                list-style-type: none;
+                li{
+                    display: inline-block;
+                    margin: 5px;
+                    width: 26px;
+                    border: none;
+                    border-radius: 50%;
+                    
+                    a{
+                        color: $font--color-primary_1;
+                        text-decoration: none;
+                        i{
+                            color: $font--color-primary_1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
