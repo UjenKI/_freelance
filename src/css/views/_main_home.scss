@@ -1025,7 +1025,7 @@
             text-transform: uppercase;
         }
         p{
-         @include font(14px, $font-open_sans-regular, $font--color-primary_3, 37px);
+         @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
          font-weight: 400;
          letter-spacing: 0.7px; 
          margin: 30px 0;
@@ -1049,7 +1049,111 @@
                 @include font(14px, $font-open_sans-regular, $font--color-primary_1, 37px);
          font-weight: 400;
                 border: none;
+                outline: none;
                 background: $bgc--color-primary_1;
+            }
+        }
+    }
+}
+.contact_us{
+    padding: 70px 0;
+    background: $bgc--color-primary_4;
+    .contact_us_title{
+        text-align: center;
+        h3{
+            margin: 10x 0 30px;
+            @include font(20px, $font-ssp-regular, $font--color-primary_2, 37px);
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        p{
+         @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+         font-weight: 400;
+         letter-spacing: 0.7px; 
+         margin: 30px 0;
+        }
+    }
+    .contact_item_box{
+        padding: 15px 15px;
+        transition: box-shadow .3s;
+        margin: 20px 0;
+        .contact_icon{
+            width: 100%;
+            padding: 26px 0;
+            text-align: center;
+            i{
+                color: $font--color-primary_1; 
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 125px;
+                transition: 0.3s ease-in;
+            }
+        }
+        .c-mail{
+            background: url(../../img/contact-1.jpg) center;
+            background-size: cover;
+        }
+        .c-map{
+            background: url(../../img/contact-2.jpg) center;
+            background-size: cover;
+        }
+        .c-number{
+            background: url(../../img/contact-3.jpg) center;
+            background-size: cover;
+        }
+        .contact_info{
+            text-align: center;
+            padding: 20px 50px;
+            width: 100%;
+            background: $bgc--color-primary_9;
+            h4{
+                @include font(16px, $font-open_sans-regular, $font--color-primary_6, 35px);
+                text-transform: uppercase;
+                font-weight: 400;
+                letter-spacing: 0.64;
+            }
+            p{
+                @include font(14px, $font-open_sans-regular, $font--color-primary_3, 20px);
+                font-weight: 400;
+                letter-spacing: 0.7px;
+                text-transform: uppercase; 
+            }
+        }
+        &:hover{
+            box-shadow: 0 0 11px rgba(33,33,33,.2); 
+            cursor: pointer;
+            i{
+                color: $font--color-primary_4;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+.forms_contact{
+    background: $bgc--color-primary_9;
+    form{
+        margin: 40px 0;
+        input, textarea{
+            background: none;
+            border: 1px solid $border--color-primary_3;
+            @include font(14px, $font-open_sans-regular, $font--color-primary_3, 26px);
+            font-weight: 400;
+            padding: 10px 5px;
+            width: 100%;
+            margin: 10px 0;
+        }
+        button{
+            padding: 5px 50px;
+            width: 100%;
+            @include font(14px, $font-open_sans-regular, $font--color-primary_1, 37px);
+            font-weight: 400;
+            border: none;
+            transition: box-shadow .3s;
+            outline: none;
+            background: $bgc--color-primary_1;
+            &:hover{
+                box-shadow: 0 0 11px rgba(33,33,33,.2);  
             }
         }
     }
