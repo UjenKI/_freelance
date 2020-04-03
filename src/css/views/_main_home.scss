@@ -1166,9 +1166,9 @@
         align-items: center;
         width: 100%;
         height: 440px;
-        background: $bgc--color-primary_10;
+        background: $bgc--color-primary_15;
         z-index: 1;
-        transition: 0.3s ease-in;
+        transition: 0.3s ease-in-out;
         h4{
             @include font(16px, $font-open_sans-regular, $font--color-primary_1, 25px); 
             font-weight: 400;
@@ -1206,3 +1206,4 @@
         width: 100%;
     }
 }
+

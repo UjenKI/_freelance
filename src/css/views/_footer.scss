@@ -1,31 +1,35 @@
-.footer{
+footer{
     background: $bgc--color-primary_4;
     text-align: center;
     .footer_item{
+        padding: 80px;
         a{
             text-decoration: none;
             color: $font--color-primary_1;
             h1{
                 margin: 0;
                 font-weight: 800;
+                text-transform: uppercase;
+                
                 @include font(25px, $font-jonh-bold, $font--color-primary_7, 12px);
             }
         }
         p{
-            @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+            @include font(14px, $font-open_sans-regular, $font--color-primary_3, 62px);
             font-weight: 400;
             letter-spacing: 0.7;
         }
         .footer_social-buttons{
             ul{
+                padding: 0;
                 list-style-type: none;
                 li{
                     display: inline-block;
-                    margin: 5px;
+                    margin: 15px 5px;
                     width: 26px;
                     border: none;
                     border-radius: 50%;
-                    
+                    transition: 0.3s ease-in-out;
                     a{
                         color: $font--color-primary_1;
                         text-decoration: none;
@@ -33,6 +37,25 @@
                             color: $font--color-primary_1;
                         }
                     }
+                    &:hover{
+                        box-shadow: 0 0 11px rgba(33,33,33,.6);
+                        margin-top: 0;
+                    }
+                }
+                .f_facebook{
+                    background: $bgc--color-primary_10;
+                }
+                .f_twitter{
+                    background:$bgc--color-primary_11;
+                }
+                .f_linkedin{
+                    background:$bgc--color-primary_12;
+                }
+                .f_instagram{
+                    background:$bgc--color-primary_13;
+                }
+                .f_vimeo{
+                    background:$bgc--color-primary_14;
                 }
             }
         }
