@@ -15,6 +15,7 @@
         margin: 20px 0;
        }
        .btn_primary-1{
+        outline: none;
         background: $font--color-primary_1;
         width: 140px;
         height: 37px;
@@ -58,6 +59,7 @@
                 margin: 10px;
                 width: 53px;
                 height: 53px;
+                outline: none;
                 border: none;
                 border-radius: 50%;
                 background: $bgc--color-primary_2;
@@ -72,20 +74,33 @@
         }
     }
     .about_txt_item{
+        
         h4{
             letter-spacing: 0.8;
             font-weight: 400;
             @include font(20px, $font-open_sans-regular, $font--color-primary_6, 81px)
         }
-        p{
-            @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
-            font-weight: 400;
-            letter-spacing: 0.7px; 
-            span{
-                color: $font--color-primary_4;
-                font-weight: bold;
+        .txt_column{
+            margin: 20px 0;
+            column-count: 2;
+            column-gap: 50px;
+            column-rule-style: none;
+            p{
+                @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
+                font-weight: 400;
+                letter-spacing: 0.7px; 
+                span{
+                    color: $font--color-primary_4;
+                    font-weight: bold;
+                }
             }
         }
+    }
+    #lorem{
+        display: none;
+    }
+    #professional{
+        display: none;
     }
     .txt_item{
         padding: 88px 34px 48px;
@@ -182,6 +197,7 @@
             background: none;
             width: 140px;
             height: 37px;
+            outline: none;
             border-radius: 19px;
             border: 1px solid $border--color-primary_2;
             @include font(16px, $font-open_sans-regular, $font--color-primary_1, 12px);
@@ -245,7 +261,7 @@
             h4{
                 letter-spacing: 0.8;
                 font-weight: 400;
-                @include font(20px, $font-open_sans-regular, $font--color-primary_6, 81px)
+                @include font(20px, $font-open_sans-regular, $font--color-primary_6, 40x)
             }
             p{
                 @include font(14px, $font-open_sans-regular, $font--color-primary_3, 25px);
@@ -491,6 +507,9 @@
                 grid-row: 1/7;
                 .gallery_hover{
                     padding: 20px 36px;
+                    p{
+                        margin: 20px 0;
+                    }
                 }
             }
             #item-three{
@@ -522,6 +541,9 @@
                 grid-row: 9/15;
                 .gallery_hover{
                     padding: 23px 36px;
+                    p{
+                        margin: 18px 0;
+                    }
                 }
             }
             #item-ten{
@@ -534,7 +556,7 @@
                 .gallery_hover{
                     padding: 1px 31px;
                     p{
-                        margin: 18px 0;
+                        margin: 12px 0;
                     }
                 }
             }
@@ -543,6 +565,9 @@
                 grid-row: 21/15;
                 .gallery_hover{
                     padding: 20px 36px;
+                    p{
+                        margin: 18px 0;
+                    }
                 }
             }
         }
@@ -564,6 +589,7 @@
             background: none;
             width: 140px;
             height: 37px;
+            outline: none;
             border-radius: 19px;
             border: 1px solid $border--color-primary_2;
             @include font(16px, $font-open_sans-regular, $font--color-primary_1, 12px);
@@ -681,10 +707,16 @@
                         span{
                             display: block;
                             position: absolute;
-                            width: 65%;
+                            width: 80%;
                             height: 100%;
                             transition: 0.3s ease-in;
                             background: $bgc--color-primary_1;
+                        }
+                        .sfive{
+                            width: 65%;  
+                        }
+                        .sevfive{
+                            width: 75%; 
                         }
                     }
                 }
@@ -732,6 +764,7 @@
         .section-line-btn{
             background: none;
             width: 140px;
+            outline: none;
             height: 37px;
             border-radius: 19px;
             border: 1px solid $border--color-primary_2;
@@ -962,6 +995,7 @@
                 .start{
                     border: none;
                     width: 100%;
+                    outline: none;
                     padding: 20px;
                     background: $bgc--color-primary_1;
                     @include font(16px, $font-open_sans-regular, $font--color-primary_1, 12px);

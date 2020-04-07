@@ -30,6 +30,11 @@
                 animation: fly;
                 animation-duration: 3s;
                 animation-iteration-count: infinite;
+                a{
+                    i{
+                        color: $font--color-primary_1;
+                    }
+                }
                 &:focus{
                     outline: none;
                 }

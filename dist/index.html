@@ -12,6 +12,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Підключення slick -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -34,12 +35,12 @@
                 <span class="third_span"></span>
                 <ul>
                   <li class="menu_item"><a href="#">Home</a></li>
-                  <li class="menu_item"><a href="#">About</a></li>
-                  <li class="menu_item"><a href="#">Services</a></li>
-                  <li class="menu_item"><a href="#">Portfolio</a></li>
-                  <li class="menu_item"><a href="#">Team</a></li>
-                  <li class="menu_item"><a href="#">Blog</a></li>
-                  <li class="menu_item"><a href="#">Contact</a></li>
+                  <li class="menu_item"><a href="#_about">About</a></li>
+                  <li class="menu_item"><a href="#_services">Services</a></li>
+                  <li class="menu_item"><a href="#_portfolio">Portfolio</a></li>
+                  <li class="menu_item"><a href="#_team">Team</a></li>
+                  <li class="menu_item"><a href="#_blog">Blog</a></li>
+                  <li class="menu_item"><a href="#_contact">Contact</a></li>
                 </ul>
               </label>
             </nav>
@@ -55,18 +56,22 @@
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis<br /> praesentium
                         voluptatum</p>
                     <div class="btn-box">
-                        <button class="banner_btn"><i class="fas fa-chevron-down"></i></button>
+                        <button class="banner_btn">
+                            <a href="#_bouncy">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </button>
                     </div>
     
                 </div>
             </div>
         </div>
     </section>
-    <section class="this_is_bouncy">
+    <section id="_bouncy" class="this_is_bouncy">
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
-                    <div class="is_bouncy_item">
+                    <div class="is_bouncy_item fadeInDown">
                         <h3>This is Bouncy</h3>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
                             deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
@@ -84,7 +89,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section id="_about" class="about">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -92,29 +97,75 @@
                         <h3>DetailS ABOUT BOUNCY</h3>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui<br /> blanditiis praesentium</p>
                         <div class="about_btn_box">
-                            <button><i class="far fa-heart"></i></button>
-                            <button><i class="fas fa-mouse"></i></button>
-                            <button><i class="far fa-lightbulb"></i></button>
+                            <button onclick="opTab('creative')"><i class="far fa-heart"></i></button>
+                            <button onclick="opTab('lorem')"><i class="fas fa-mouse"></i></button>
+                            <button onclick="opTab('professional')"><i class="far fa-lightbulb"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-5">
-                    <div class="about_txt_item">
+                <div class="col-md-12">
+                    <div class="about_txt_item" id="creative">
                         <h4>Creative Ideas</h4>
-                        <p>At <span>vero</span> eos et accusamus et iusto odio dignissimos <b>ducimus</b> qui blanditiis
-                            praesentium voluptatum deleniti atque corrupti quos dolores </p>
+                        <div class="txt_column">
+                            <p>At <span>vero</span> eos et accusamus et iusto odio dignissimos <b>ducimus</b> qui blanditiis
+                                praesentium voluptatum deleniti atque corrupti quos dolores At vero eos et accusamus et
+                                iusto
+                                odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                                deleniti atque <b>corrupti quos</b> dolores et quas molestias <span>excepturi</span> sint
+                                occaecati cupiditate non provident, <b>similique</b> sunt in culpa qui officia deserunt
+                                mollitia
+                                animi, id est laborum et dolorum fuga. Et harum quidem</p>
+                        </div>
+                    </div>
+                    <div class="about_txt_item" id="lorem">
+                        <h4>Lorem Ipsum</h4>
+                        <div class="txt_column">
+                            <p>At <span>vero</span> eos et accusamus et iusto odio dignissimos <b>ducimus</b> qui blanditiis
+                                praesentium voluptatum deleniti atque corrupti quos dolores At vero eos et accusamus et
+                                iusto
+                                qui blanditiis praesentium voluptatum
+                                deleniti atque <b>corrupti quos</b> dolores et quas molestias <span>excepturi</span> sint
+                                occaecati cupiditate non provident, <b>similique</b> sunt in culpa qui officia deserunt
+                                mollitia
+                                animi, id est laborum et dolorum fuga. Et harum quidem</p>
+                        </div>
+    
+                    </div>
+                    <div class="about_txt_item" id="professional">
+                        <h4>Professional</h4>
+                        <div class="txt_column">
+                            <p>At <span>vero</span> eos et accusamus et iusto odio dignissimos <b>ducimus</b> qui blanditiis
+                                praesentium voluptatum deleniti atque corrupti quos dolores At vero eos et accusamus et
+                                iusto
+                                odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                                deleniti atque <b>corrupti quos</b> dolores et quas molestias <span>excepturi</span> sint
+                                occaecati cupiditate non provident, <b>similique</b> sunt in culpa qui officia deserunt
+                                et dolorum fuga. Et harum quidem</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-7">
-                    <div class="txt_item">
+                <!-- <div class="col-md-7">
+                    <div class="txt_item" id="creative">
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
                             deleniti atque <b>corrupti quos</b> dolores et quas molestias <span>excepturi</span> sint
                             occaecati cupiditate non provident, <b>similique</b> sunt in culpa qui officia deserunt mollitia
                             animi, id est laborum et dolorum fuga. Et harum quidem r</p>
                     </div>
-                </div>
+                    <div class="txt_item" id="lorem">
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                            deleniti atque <b>corrupti quos</b> dolores et quas molestias <span>excepturi</span> sint
+                            occaecati cupiditate non provident, <b>similique</b> sunt in culpa qui officia deserunt mollitia
+                            animi, id est laborum et dolorum fuga. Et harum quidem r</p>
+                    </div>
+                    <div class="txt_item" id="professional">
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                            deleniti atque <b>corrupti quos</b> dolores et quas molestias <span>excepturi</span> sint
+                            occaecati cupiditate non provident, <b>similique</b> sunt in culpa qui officia deserunt mollitia
+                            animi, id est laborum et dolorum fuga. Et harum quidem r</p>
+                    </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -170,7 +221,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section id="_services" class="services">
         <div class="container">
             <div class="row">
                 <div class="col-12 service_title">
@@ -263,7 +314,7 @@
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <section id="_portfolio" class="gallery">
         <div class="container">
             <div class="row">
                 <div class="col-12 gallery_title">
@@ -409,7 +460,7 @@
             <!--  -->
         </div>
     </section>
-    <section class="team">
+    <section id="_team" class="team">
         <div class="container">
             <div class="row">
                 <div class="col-12 team_title">
@@ -449,7 +500,7 @@
                                     <span data-target="65" id="percent">65%</span>
                                 </div>
                                 <div class="line">
-                                    <span></span>
+                                    <span class="sfive"></span>
                                 </div>
                             </div>
                             <div class="fst_line">
@@ -458,7 +509,7 @@
                                     <span data-target="75" id="percent">75%</span>
                                 </div>
                                 <div class="line">
-                                    <span></span>
+                                    <span class="sevfive"></span>
                                 </div>
                             </div>
                         </div>
@@ -495,7 +546,7 @@
                                     <span id="percent">65%</span>
                                 </div>
                                 <div class="line">
-                                    <span></span>
+                                    <span class="sfive"></span>
                                 </div>
                             </div>
                             <div class="fst_line">
@@ -504,7 +555,7 @@
                                     <span id="percent">75%</span>
                                 </div>
                                 <div class="line">
-                                    <span></span>
+                                    <span class="sevfive"></span>
                                 </div>
                             </div>
                         </div>
@@ -542,7 +593,7 @@
                                     <span id="percent">65%</span>
                                 </div>
                                 <div class="line">
-                                    <span></span>
+                                    <span class="sfive"></span>
                                 </div>
                             </div>
                             <div class="fst_line">
@@ -551,7 +602,7 @@
                                     <span id="percent">75%</span>
                                 </div>
                                 <div class="line">
-                                    <span></span>
+                                    <span class="sevfive"></span>
                                 </div>
                             </div>
                         </div>
@@ -633,7 +684,7 @@
             </div>
         </div>
     </section>
-    <section class="news">
+    <section id="_blog" class="news">
         <div class="container">
             <div class="row">
                 <div class="col-12 news_title">
@@ -782,7 +833,7 @@
             </div>
         </div>
     </section>
-    <section class="contact_us">
+    <section id="_contact" class="contact_us">
         <div class="container">
             <div class="row">
                 <div class="col-12 contact_us_title">
@@ -895,7 +946,10 @@
     <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="jquery.malihu.PageScroll2id.min.js"></script>
     <script src="js/teachers.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/tabs.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
