@@ -1,0 +1,372 @@
+@media (max-width: 1200px) {
+    body{
+        .sl_slide{
+            width: 86%;
+        }
+    }
+}
+@media (max-width: 992px){
+    body{
+        .sl_slide{
+            width: 84%;
+            padding: 50px 15px !important;
+            .slide_title{
+                width: 90%;
+            }
+        }
+        .price{
+            .price_box{
+                padding: 0 11px;
+            }
+        }
+        .contact_us {
+            .contact_item_box{
+                padding: 8px;
+                margin: 0;
+                 .contact_info{
+                     padding: 20px 6px;
+                 }
+            }
+        } 
+        .gallery{
+            .gallery_container{
+                .gallery_item{
+                    .gallery_item_box{
+                        .gallery_hover{
+                            padding: 14px 14px;
+                            h3{
+                                line-height: 30px;
+                                letter-spacing: 3px;
+                            }
+                        }
+                    }
+                    #item-two{
+                        .gallery_hover{
+                            padding: 3px 14px;
+                            p{
+                                margin: 10px 0;
+                                line-height: 16px;
+
+                            }
+                        }
+                    }
+                    #item-nine{
+                        .gallery_hover{
+                            padding: 3px 14px;
+                            p{
+                                margin: 10px 0;
+                                line-height: 16px;
+
+                            }
+                        }
+                    }
+                    #item-eleven{
+                        .gallery_hover{
+                            padding: 3px 6px;
+                            h3{
+                                margin: 0 1px;
+                            }
+                            p{
+                                margin: 2px 0;
+                                line-height: 16px;
+
+                            }
+                        }
+                    } 
+                    #item-twelve{
+                        .gallery_hover{
+                            padding: 3px 14px;
+                            p{
+                                margin: 10px 0;
+                                line-height: 16px;
+
+                            }
+                        }
+                    }   
+                }
+            }
+        } 
+        .services{
+            .service_shelf{
+                .service_shelf_item{
+                    padding: 20px 74px 27px 122px;
+                }
+                .service_tool{
+                    margin: 0 20px;
+                    .circle_btn{
+                        margin: 4px;
+                    }
+                }
+            }
+            .progress_bar{
+                justify-content: center;
+                .circle{
+                    display: block;
+                    margin: 10px 6px;
+                }
+            }  
+        }    
+    }
+}
+@media (max-width: 849px){
+    .news{
+        .slider{
+            .slick-dots{
+                padding: 0;
+            }
+        } 
+    }    
+}
+@media (max-width: 768px){
+    body{
+        header{
+            nav{
+                label{
+                    ul{
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+        .main_banner{
+            height: 450px;
+        }
+        .this_is_bouncy{
+            .is_bouncy_item{
+                padding: 0;
+            }
+        } 
+        .slick-slider{
+            .slick-list{
+                width: 90%;
+            }
+        } 
+        .news{
+            .slider{
+                .sl_slide{
+                    margin: 0 20px;
+                    outline: none;
+                }
+            } 
+        } 
+        .submit{
+            .submit_line_item{
+                padding: 0;
+                p{
+                    margin-top: 10px;
+                }
+            }
+            .submit_item{
+                padding: 0;
+                margin: 10px 0;
+                .submit_btn{
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        } 
+        .impressed{
+            .impressed_item{
+                padding: 60px 40px;
+            }
+            .impressed_img{
+                .impressed_img_box{
+                    height: 100%;
+                    position: static;
+                    img{
+                        margin-top: 55px;
+                    }
+                }
+            } 
+        } 
+        .gallery{
+            .gallery_title{
+                h3{
+                    margin: 50px 0 26px;
+                }
+                p{
+                    margin: 2px 0;
+                }
+            }
+            .gallery_filter{
+                 ul{
+                     padding: 6px 0;
+                    li{
+                        padding: 0 7px;
+                    }
+                }
+            }
+            .gallery_container{
+                .gallery_item{
+                    #item-two{
+                        .gallery_hover{
+                            padding: 3px 12px;
+                            p{
+                                margin: 5px 0;
+                            }
+                        }
+                    }
+                    #item-three{
+                        .gallery_hover{
+                            p{
+                                margin: 10px 0;
+                                line-height: 18px;
+                            }
+                        }
+                    } 
+                    #item-six{
+                        .gallery_hover{
+                            p{
+                                margin: 14px 0;
+                            }
+                        }
+                    }  
+                    #item-nine{
+                        .gallery_hover{
+                            padding: 3px 12px;
+                            p{
+                                margin: 5px 0;
+                            }
+                        }
+                    }
+                    #item-eleven{
+                        .gallery_hover{
+                            padding: 0 5px;
+                            p{
+                                line-height: 13px;
+                                margin: 1px 0;
+                            }
+                        }
+                    }
+                    #item-twelve{
+                        .gallery_hover{
+                            padding: 3px 12px;
+                            p{
+                                margin: 5px 0;
+                            }
+                        }
+                    }
+                } 
+            }
+        } 
+        .slick-slider{
+            .slick-list{
+                margin: 0 auto;
+                height: 70%;
+            }
+        } 
+        .team{
+            .sl{
+                .sl__slide{
+                    display: block;
+                    outline: none;
+                    .sl__text{
+                        text-align: center;
+                        margin-top: 16px;
+                    }
+                    .sl__img_box{
+                        width: 46%;
+                        margin: 0 auto;
+                        .sl__img_hover{
+                            padding: 48px 20%;
+                            width: 91%;
+                        }
+                    }
+                }
+            } 
+        } 
+        .testimonials{
+            .sl{
+                .testimonials_item{
+                    padding-right: 0;
+                    text-align: center;
+                } 
+            } 
+            .slick-dots{
+                padding: 0;
+            }
+        }
+        .subscribe{
+            .subscribe_title{
+                form{
+                    input{
+                        display: inline-block;
+                        width: 100%;
+                    }
+                } 
+            } 
+        } 
+        .price{
+            .price_box{
+                .price_item{
+                    .price_box_title{
+                        h4{
+                            line-height: 55px;
+                        }
+                    }
+                    .price_hover{
+                        ul{
+                            li{
+                                margin: 14px 0;
+                                font-size: 17px;
+                                line-height: 21px;
+                            }
+                        }
+                    } 
+                    .price_box_item{
+                        padding: 72px 20px;
+                    }
+                } 
+            } 
+        }  
+        .forms_contact{
+            form{
+                input{
+                    display: inline-block;
+                }
+            } 
+        } 
+    }
+}
+@media (max-width: 576px){
+    body{
+        .this_is_bouncy{
+            .is_bouncy_img{
+                padding: 60px 0;
+                img{
+                    width: 100%;
+                }
+            }
+            .is_bouncy_item{
+                padding: 0 10px;
+            }
+        } 
+        .about{
+            .about_txt_item{
+                .txt_column{
+                    padding: 0 10px;
+                }
+                h4{
+                    text-align: center;
+                }
+            } 
+        } 
+        .impressed{
+            .impressed_img{
+                overflow: hidden;
+                .impressed_img_box{
+                    transform: scale(1.5);
+                    img{
+                        margin-top: 104px;
+                        width: 100%;
+                    }
+                }   
+            } 
+        }
+        .price{
+            .price_box{
+                margin: 20px 0;
+            }
+        }  
+    }
+}
