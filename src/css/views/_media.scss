@@ -351,6 +351,13 @@
                 }
             } 
         } 
+        .featured_projects{
+            .for-img{
+                .layer{
+                    padding: 23vh;
+                }
+            } 
+        } 
         .impressed{
             .impressed_img{
                 overflow: hidden;
@@ -363,10 +370,349 @@
                 }   
             } 
         }
+        .featured_projects{
+            .for-img{
+                .layer{
+                    padding: 122px;
+                }
+            } 
+        } 
         .price{
             .price_box{
                 margin: 20px 0;
             }
+        }
+        .services{
+            .progress_bar{
+                display: grid;
+            }
+            .service_shelf{
+                .service_tool{
+                    display: flex;
+                    justify-content: center;
+                }
+                .service_shelf_item{
+                    padding: 26px 12px;
+                    margin-top: 56px;
+                    h4{
+                        text-align: center;
+                    }
+                }
+            }  
         }  
+        .gallery{
+            .section-line{
+                margin: 0;
+            }
+            .gallery_container{
+                .gallery_item{
+                    grid-template-columns: repeat(2,minmax(20px,1fr));
+                    grid-template-rows: repeat(40,2vw);
+                    .gallery_item_box{
+                        .gallery_hover{
+                            padding: 0 10px;
+                            h3{
+                                font-size: 17px;
+                                margin: 0;
+                            }
+                            p{
+                                margin: 5px 0;
+                                font-size: 11px;
+                                line-height: 13px;
+                            }
+                        }
+                    } 
+                    #item-one{
+                        grid-row: 1/13;
+                    }
+                    #item-two{
+                        grid-row: 1/9;
+                        .gallery_hover{
+                            padding: 3px 5px;
+                            h3{
+                                line-height: 18px;
+                            }
+                            p{
+                                font-size: 10px;
+                                line-height: 14px;
+                            }
+                        }
+                    }
+                    #item-three{
+                        grid-column: 1/2;
+                        grid-row: 25/34;
+                        .gallery_hover{
+                            padding: 3px 5px;
+                            h3{
+                                line-height: 18px;
+                            }
+                            p{
+                                font-size: 10px;
+                                line-height: 14px;
+                            }
+                        }
+                    }
+                    #item-four{
+                        grid-column: 2/2;
+                        grid-row: 29/39;
+                    }
+                    #item-five{
+                        grid-row: 13/25;
+                    }
+                    #item-six{
+                        grid-row: 9/20;
+                    }
+                    #item-nine{
+                        grid-column: 1/2;
+                        grid-row: 34/42;
+                        .gallery_hover{
+                            padding: 3px 5px;
+                            h3{
+                                line-height: 18px;
+                            }
+                            p{
+                                font-size: 10px;
+                                line-height: 13px;
+                            }
+                        }
+                    }
+                    #item-ten{
+                        grid-column: 2/2;
+                        grid-row: 54/59;
+                    }
+                    #item-seven{
+                        grid-column: 1/2;
+                        grid-row: 42/59;
+                        .gallery_hover{
+                            padding: 26px 10px;
+                        }
+                    }
+                    #item-eight{
+                        grid-column: 2/2;
+                        grid-row: 39/54;
+                    }
+                    #item-eleven{
+                        grid-row: 20/29;
+                    }
+                    #item-twelve{
+                        display: none;
+                    }
+                }
+            } 
+        } 
+        .about{
+            .about_txt_item{
+                .txt_column{
+                    column-count: 1;
+                }
+            } 
+        } 
+        
     }
+}
+@media only screen and (max-width: 320px){
+    body{
+        .this_is_bouncy{
+            .is_bouncy_img{
+                padding: 17px 46px;
+            }
+            .is_bouncy_item{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        .about{
+            .about_txt_item{
+                .txt_column{
+                    column-count: 1;
+                }
+            } 
+        } 
+        .featured_projects{
+            .for-img{
+                .layer{
+                    padding: 23vh;
+                }
+            } 
+        } 
+        .submit{
+            .submit_line_item{
+                padding: 0 2px;
+            }
+        }
+        .services{
+            .progress_bar{
+                display: grid;
+            }
+            .service_shelf{
+                .service_tool{
+                    display: flex;
+                    justify-content: center;
+                }
+                .service_shelf_item{
+                    padding: 26px 12px;
+                    margin-top: 56px;
+                    h4{
+                        text-align: center;
+                    }
+                }
+            }  
+        } 
+        .progress_bar{
+            display: grid;
+        }
+        .impressed{
+            .impressed_img{
+                overflow: hidden;
+                .impressed_img_box{
+                    img{
+                        margin-top: 24px;
+                        width: 100%;
+                    }
+                }   
+            } 
+        }
+        .gallery{
+            .section-line{
+                margin: 0;
+            }
+            .gallery_container{
+                .gallery_item{
+                    grid-template-columns: repeat(2,minmax(20px,1fr));
+                    grid-template-rows: repeat(40,2vw);
+                    .gallery_item_box{
+                        .gallery_hover{
+                            padding: 0 10px;
+                            h3{
+                                font-size: 17px;
+                                margin: 0;
+                            }
+                            p{
+                                margin: 5px 0;
+                                font-size: 11px;
+                                line-height: 13px;
+                            }
+                        }
+                    } 
+                    #item-one{
+                        grid-row: 1/13;
+                    }
+                    #item-two{
+                        grid-row: 1/9;
+                        .gallery_hover{
+                            padding: 3px 5px;
+                            h3{
+                                line-height: 18px;
+                            }
+                            p{
+                                font-size: 10px;
+                                line-height: 14px;
+                            }
+                        }
+                    }
+                    #item-three{
+                        grid-column: 1/2;
+                        grid-row: 25/34;
+                        .gallery_hover{
+                            padding: 3px 5px;
+                            h3{
+                                line-height: 18px;
+                            }
+                            p{
+                                font-size: 10px;
+                                line-height: 14px;
+                            }
+                        }
+                    }
+                    #item-four{
+                        grid-column: 2/2;
+                        grid-row: 29/39;
+                    }
+                    #item-five{
+                        grid-row: 13/25;
+                    }
+                    #item-six{
+                        grid-row: 9/20;
+                    }
+                    #item-nine{
+                        grid-column: 1/2;
+                        grid-row: 34/42;
+                        .gallery_hover{
+                            padding: 3px 5px;
+                            h3{
+                                line-height: 18px;
+                            }
+                            p{
+                                font-size: 10px;
+                                line-height: 13px;
+                            }
+                        }
+                    }
+                    #item-ten{
+                        grid-column: 2/2;
+                        grid-row: 54/59;
+                    }
+                    #item-seven{
+                        grid-column: 1/2;
+                        grid-row: 42/59;
+                        .gallery_hover{
+                            padding: 26px 10px;
+                        }
+                    }
+                    #item-eight{
+                        grid-column: 2/2;
+                        grid-row: 39/54;
+                    }
+                    #item-eleven{
+                        grid-row: 20/29;
+                    }
+                    #item-twelve{
+                        display: none;
+                    }
+                }
+            } 
+        } 
+        .already_love{
+            .section-line{
+                margin: 0;
+            }
+        } 
+        .news{
+            .slider{
+                .sl_slide{
+                    .slide_title{
+                        h4{
+                            line-height: 27px;
+                        }
+                        p{
+                            margin: 5px 0;
+                        }
+                    } 
+                } 
+            } 
+        }
+        .subscribe{
+            .subscribe_title{
+                form{
+                    display: block;
+                    input{
+                        margin: 0;
+                    }
+                    button{
+                        margin: 10px 0;
+                        width: 100%;
+                    }
+                }
+            } 
+        } 
+        footer{
+            .footer_item{
+                padding: 30px;
+                p{
+                    line-height: 21px;
+                    margin-top: 18px;
+                }
+            }  
+        } 
+    } 
 }
