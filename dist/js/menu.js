@@ -3,9 +3,9 @@ function forMenu() {
     var block = document.querySelector('.banner_item');
 
     if (check.checked == true) {
-        block.style.opacity = 0;
+        block.style.display = "none";
     } else {
-        block.style.opacity = 1;
+        block.style.display = "block";
     }
 }
 

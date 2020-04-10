@@ -216,7 +216,10 @@
                  outline: none;
                  border-radius: 19px;
                  border: 1px solid $border--color-primary_2;
-                 @include font(16px, $font-open_sans-regular, $font--color-primary_1, 12px);
+                 a{
+                    @include font(16px, $font-open_sans-regular, $font--color-primary_1, 12px);
+                    text-decoration: none;
+                 }
                  &:hover{
                      transition: 0.3s ease-in;
                      background: $bgc--color-primary_3;
@@ -609,7 +612,10 @@
                  outline: none;
                  border-radius: 19px;
                  border: 1px solid $border--color-primary_2;
-                 @include font(16px, $font-open_sans-regular, $font--color-primary_1, 12px);
+                 a{
+                    @include font(16px, $font-open_sans-regular, $font--color-primary_1, 12px);
+                    text-decoration: none;
+                 }
                  &:hover{
                      transition: 0.3s ease-in;
                      background: $bgc--color-primary_3;
@@ -785,7 +791,10 @@
                  height: 37px;
                  border-radius: 19px;
                  border: 1px solid $border--color-primary_2;
-                 @include font(16px, $font-open_sans-regular, $font--color-primary_1, 12px);
+                 a{
+                    @include font(16px, $font-open_sans-regular, $font--color-primary_1, 12px);
+                    text-decoration: none;
+                 }
                  &:hover{
                      transition: 0.3s ease-in;
                      background: $bgc--color-primary_3;
